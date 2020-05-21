@@ -14,7 +14,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # pre install
 RUN apt-get update
-RUN apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+RUN apt-get install -y ca-certificates curl apt-transport-https lsb-release gnupg
 
 # Download and install the Microsoft signing key:
 RUN curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | tee /etc/apt/trusted.gpg.d/microsoft.asc.gpg > /dev/null
