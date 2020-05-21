@@ -1,0 +1,9 @@
+azureml-sdk
+ray[debug,dashboard,rllib]
+torch
+torchvision
+filelock
+jupyterlab
+gputil
+flask
+cloudpickle
